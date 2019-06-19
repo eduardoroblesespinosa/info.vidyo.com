@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Vidyo® </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+    <script type="text/javascript">
+        $(function () {
+
+            $(".video").click(function () {
+
+                var theModal = $(this).data("target"),
+
+                    videoSRC = $(this).attr("data-video"),
+
+                    videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+
+                $(theModal + ' iframe').attr('src', videoSRCauto);
+
+                $(theModal + ' button.close').click(function () {
+
+                    $(theModal + ' iframe').attr('src', videoSRC);
+
+                });
+
+            });
+
+        });
+    </script>
+    <style>
+        body.ctx {
+            padding-top:135px;
+        }
+        p.enc {
+            color: #49a7f3;
+            font-size: 40px;
+            
+        }
+        p.enc1 {
+            color: white;
+            font-size: 28px;
+            margin-top:20px;
+        }
+        p.alinder {
+            text-align: right;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body class="ctx">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+           
+            <p class="enc1"><img src="css/logo.jpg" width="75" height="75" />Vidyo°</p><p class="alinder"><a class="btn btn-warning btn-lg" href="#">Contactar a Ventas &raquo;</a></p>
+                
+           
+            <!--  <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div> -->
+        </div>
+    </nav>
+
+    <!-- Header -
+          <header class="bg-primary py-5 mb-5">
+              <div class="container h-100">
+                  <div class="row h-100 align-items-center">
+                      <div class="col-lg-12">
+                          <h1 class="display-4 text-white mt-5 mb-2">Business Name or Tagline</h1>
+                          <p class="lead mb-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non possimus ab labore provident mollitia. Id assumenda voluptate earum corporis facere quibusdam quisquam iste ipsa cumque unde nisi, totam quas ipsam.</p>
+                      </div>
+                  </div>
+              </div>
+          </header>->
+          <!-- Page Content -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <p class="enc m-0 text-center">¡Aquí está su kit de éxito de Video Banking!</p>
+                
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb1.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Tendencias clave en
+                            Video Banking
+                        </h4>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://info.vidyo.com/rs/631-GFA-124/images/Vidyo-2018-Video-Banking-Survey-PDFVersion.pdf" class="btn btn-primary btn-lg" target="_blank">Ver informe &raquo;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb2.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Cómo implementar la banca por video:
+                            La última guía
+                        </h4>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://info.vidyo.com/rs/631-GFA-124/images/Vidyo-Video%20Banking%20Implementation.pdf" class="btn btn-primary btn-lg" target="_blank">Ver informe &raquo;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb3.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Video compromiso con el cliente
+                            para servicios financieros
+                        </h4>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-lg video" data-toggle="modal" data-target="#videoModal8">Ver video &raquo;</a>
+                        <div class="modal fade" id="videoModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog">
+
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel3">Vidyo Demo Customer Engagement Financial Services</h4>
+                                        <iframe width="100%" height="350" src="https://www.youtube.com/embed/F9R_D-0Loz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb4.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Banca Privada y
+                            Gestión de patrimonios
+                        </h4>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://info.vidyo.com/rs/631-GFA-124/images/Vidyo-SB-Video-Client-Engagement-Private-Banking-Wealth-Management.pdf" class="btn btn-primary btn-lg" target="_blank">Ver pdf &raquo;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb5.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Prestamos de dinero y cambio de divisas</h4>
+                       
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://info.vidyo.com/rs/631-GFA-124/images/Vidyo-SB-Customer-Engagement-Money-Lending.pdf" class="btn btn-primary btn-lg" target="_blank">Ver pdf &raquo;</a>
+                        <a href="#" class="btn btn-primary btn-lg video" data-toggle="modal" data-target="#videoModal7">Ver video &raquo;</a>
+                        <div class="modal fade" id="videoModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog">
+
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel3">Video Chat For Money Lending - Video Banking</h4>
+                                        <iframe width="100%" height="350" src="https://www.youtube.com/embed/c-RiF4YTRVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb6.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Banco habilitado para video:
+                            Centro de contacto
+                        </h4>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://info.vidyo.com/rs/631-GFA-124/images/Vidyo-SB-Video-Enabled-Bank-Contact-Center.pdf" class="btn btn-primary btn-lg" target="_blank">Ver pdf &raquo;</a>
+                        <a href="#" class="btn btn-primary btn-lg video" data-toggle="modal" data-target="#videoModal6">Ver video &raquo;</a>
+                        <div class="modal fade" id="videoModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog">
+
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel3">Video Contact Center - Video Banking</h4>
+                                        <iframe width="100%" height="350" src="https://www.youtube.com/embed/DKhSRPULnsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb7.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Apertura de cuenta</h4>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://info.vidyo.com/rs/631-GFA-124/images/Vidyo-SB-Account-Opening.pdf" class="btn btn-primary btn-lg" target="_blank">Ver pdf &raquo;</a>
+                        <a href="#" class="btn btn-primary btn-lg video" data-toggle="modal" data-target="#videoModal5">Ver video &raquo;</a>
+                        <div class="modal fade" id="videoModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog">
+
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel3">Video Chat for Account Opening - Video Banking</h4>
+                                        <iframe width="100%" height="350" src="https://www.youtube.com/embed/Gdg_rMW8VLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb8.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Habilitación de video en cajeros automáticos</h4>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://info.vidyo.com/rs/631-GFA-124/images/Vidyo-SB-Video-Enabled-Branch.pdf" class="btn btn-primary btn-lg" target="_blank">Ver pdf &raquo;</a>
+                        <a href="#" class="btn btn-primary btn-lg video" data-toggle="modal" data-target="#videoModal4">Ver video &raquo;</a>
+                        <div class="modal fade" id="videoModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog">
+
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel3">Video-Enabled Branch - Video Banking</h4>
+                                        <iframe width="100%" height="350" src="https://www.youtube.com/embed/aDCorsEfmD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb9.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Banca comercial</h4>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://info.vidyo.com/rs/631-GFA-124/images/Vidyo-SB-Video-Client-Engagement-Commercial-Banking.pdf" class="btn btn-primary btn-lg" target="_blank">Ver pdf &raquo;</a>
+                        <a href="#" class="btn btn-primary btn-lg video" data-toggle="modal" data-target="#videoModal3">Ver video &raquo;</a>
+                        <div class="modal fade" id="videoModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog">
+
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel3">Video Chat for Private and Commercial Banking - Video Banking</h4>
+                                        <iframe width="100%" height="350" src="https://www.youtube.com/embed/85DvT0uklxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb10.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Bloomberg:
+                            Caso de estudio
+                        </h4>
+                       
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-lg">Ver pdf &raquo;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb10.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Diamond:
+                            Unión de Crédito
+                        </h4>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-lg">Ver pdf &raquo;</a>
+                        <a href="#" class="btn btn-primary btn-lg video" data-toggle="modal" data-target="#videoModal2">Ver video &raquo;</a>
+                        <div class="modal fade" id="videoModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog">
+
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel2">Vidyo Case Study: Diamond Credit Union</h4>
+                                        <iframe width="100%" height="350" src="https://www.youtube.com/embed/zINHHQy1iYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="css/vb10.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Vidyo Engage
+                            para Genesys
+                        </h4>
+                       
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-lg">Ver pdf &raquo;</a>
+                        <a href="#" class="btn btn-primary btn-lg video" data-toggle="modal" data-target="#videoModal1">Ver video &raquo;</a>
+                        <div class="modal fade" id="videoModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog">
+
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel1">VidyoEngage for Genesys</h4>
+                                        <iframe width="100%" height="350" src="https://www.youtube.com/embed/-Obn_8Co00I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <div class="container text-center">
+        <p class="m-0 text-center enc">Seminario Web</p><br />
+        <input type="image" id="image" alt="Login" src="css/vb13.png" class="video" data-toggle="modal" data-target="#videoModal">
+        <br /><br /><br />
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Video Banking Research and Analysis Webcast May 23rd, 2018</h4>
+                        <iframe width="100%" height="350" src="https://www.youtube.com/embed/DHphjKo1OAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <a href="#" class="btn btn-primary btn-lg">Diapositivas del Seminario &raquo;</a> 
+    </div>
+    <br /><br /><br /><br />
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <img src="css/footer.png" /><p class="text-white">© 2019 Vidyo, Inc. All Rights Reserved.</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
