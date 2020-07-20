@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Vidyo® </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    <script type="text/javascript">
+        $(function () {
+
+            $(".video").click(function () {
+
+                var theModal = $(this).data("target"),
+
+                    videoSRC = $(this).attr("data-video"),
+
+                    videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+
+                $(theModal + ' iframe').attr('src', videoSRCauto);
+
+                $(theModal + ' button.close').click(function () {
+
+                    $(theModal + ' iframe').attr('src', videoSRC);
+
+                });
+
+            });
+
+        });
+    </script>
+    <style>
+        .content {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(https://info.vidyo.com/rs/631-GFA-124/images/testback.jpg);
+            background-size: cover;
+        }
+        .col-md-5 {
+            background-color: #fff
+        }
+
+        .col-md-7 {
+            color: #fff
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    
+       
+    
+
+    <!-- Header -
+          <header class="bg-primary py-5 mb-5">
+              <div class="container h-100">
+                  <div class="row h-100 align-items-center">
+                      <div class="col-lg-12">
+                          <h1 class="display-4 text-white mt-5 mb-2">Business Name or Tagline</h1>
+                          <p class="lead mb-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non possimus ab labore provident mollitia. Id assumenda voluptate earum corporis facere quibusdam quisquam iste ipsa cumque unde nisi, totam quas ipsam.</p>
+                      </div>
+                  </div>
+              </div>
+          </header>->
+          <!-- Page Content -->
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"><p class="text-center"><img style="padding:40px" src="css/vb14.png" /></p></div>
+            </div>
+            <div class="row fliprow">
+                <div class="col-md-7">
+                    <div class="mktoText text-white" id="leftTop">
+                        <h1>¿Cómo podemos ayudar?</h1>
+                        <p>Si tiene preguntas relacionadas con la videoconferencia, nuestro equipo de expertos en colaboración de video tiene respuestas. Llámenos o complete este formulario y nos pondremos en contacto con usted en breve.</p>
+                        <h2>Consultas en general</h2>
+                        <p><strong>México Latin America<br /> </strong>Phone: +55 445-VIDYO (22975) or +55 4452-2975<br /></p>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-white fade-in">
+                    <h1 class="mktoText" id="formHeadline"><span style="font-size: 24px;">Connect with a&nbsp;</span><span style="font-size: 24px;">Vidyo Expert</span></h1>
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+<script>
+  hbspt.forms.create({
+	portalId: "5488238",
+	formId: "10514439-780e-479d-baad-5c515faa91eb"
+});
+</script>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="fliprow">
+                <div class="col-sm-12"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+            </div>
+        </div>
+    </div>
+                <!-- Footer -->
+                <footer class="py-5 bg-dark">
+                    <div class="container">
+                        <img src="css/footer.png" /><p class="text-white">© 2019 Vidyo, Inc. All Rights Reserved.</p>
+                    </div>
+
+                    <!-- /.container -->
+                </footer>
+                <!-- Bootstrap core JavaScript -->
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
